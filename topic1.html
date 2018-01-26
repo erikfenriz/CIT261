@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.png">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -11,74 +12,127 @@
 </head>
 <body>
 <header><a href="index.html">Back</a></header>
-<section class="topic">
+<main>
+    <section class="topic">
 
-    <div class="date">January 26 2018</div>
+        <div class="date">January 26 2018</div>
 
-    <h2>Topic#1</h2>
+        <h2>Topic#1</h2>
 
-    <h3 class="quote">Variables</h3>
+        <h3 class="quote">Variables</h3>
 
-    <p>Variables are used to store information to be referenced and manipulated in a computer program. They also provide
-        a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and
-        ourselves. It is helpful to think of variables as containers that hold information.</p>
+        <p>Variables are used to store information to be referenced and manipulated in a computer program. They also
+            provide
+            a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader
+            and
+            ourselves. It is helpful to think of variables as containers that hold information.</p>
 
-    <p>It is important to declare the variables used in the program (if global) or function (if local) on top and use
-        them later. It makes it easier for
-        maintaining, and considered a best practice.</p>
-    <br>
-    <pre>
+        <p>It is important to declare the variables used in the program (if global) or function (if local) on top and
+            use
+            them later. It makes it easier for
+            maintaining, and considered a best practice.</p>
+        <pre>
         var car, bus, pedestrian;
         function myFunction(){
         var first, second, i, y, x;
         // ... do something
         }
     </pre>
-    <br>
-    <p>With the EcmaScript 6 version it is also better to pick <span style="color: brown">let</span> or <span
-            style="color: brown">const.</span><br>
-        <strong>Let</strong> has block scope whereas <strong>var</strong> has function scope. Using let instead of var
-        means using the variables in the place where they were declared which produces the less prone to error code.</p>
-    <p><strong>Const.</strong>The const keyword was introduced in es6 to allow immutable variables. That is, variables
-        whose value cannot be modified once assigned.</p>
-    <p><strong>Hoisting.</strong>Hoisting is a JavaScript mechanism where variables and function declarations are moved
-        to the top of their scope before code execution.
+        <p>With the EcmaScript 6 version it is also better to pick <span style="color: brown">let</span> or <span
+                style="color: brown">const.</span><br>
+            <strong>Let</strong> has block scope whereas <strong>var</strong> has function scope. Using let instead of
+            var
+            means using the variables in the place where they were declared which produces the less prone to error code.
+        </p>
+        <p><strong>Const.</strong>The const keyword was introduced in es6 to allow immutable variables. That is,
+            variables
+            whose value cannot be modified once assigned.</p>
+        <p><strong>Hoisting.</strong>Hoisting is a JavaScript mechanism where variables and function declarations are
+            moved
+            to the top of their scope before code execution.
 
-    </p>
-    <p><strong>Assigning value:</strong></p>
-    <pre>
+        </p>
+        <p><strong>Assigning value:</strong></p>
+        <pre>
         let x, y z;
         x = 10
-        for (y = 0; x < something; y++){
+        for (y = 0; x &lt; something; y++){
         // ... do something
         }
     </pre>
 
+        <br>
+        <hr>
+    </section>
 
-    <hr>
 
-</section>
+    <section>
+        <h3 class="quote">Functions</h3>
+        <p>A JavaScript function is a block of code designed to perform a particular task. Also, every function in
+            JavaScript is an object.</p>
+        <p>It is the function declaration:</p>
+        <pre>
+        function myFunction(){
+        }
+    </pre>
+        <p>Functions can be assigned to a variable and called to store the product of a function in a variable.</p>
+        <p>It is an example of the function expression:</p>
+        <pre>
+        var myVariable = function(){
+        }
+    </pre>
+        <p><strong>A live example of working function along with a stored value:</strong></p>
+        <input id="inputValue" type="text" placeholder="Change value">
+
+        <p id="liveOutput" style="margin: auto">See me change!</p>
+        <hr>
+    </section>
 
 
-<section class="topic">
-    <div class="date">January 27 2018</div>
+    <section>
+        <h3 class="quote">Loops</h3>
+        <p>Loops in programming language exist to escape hard coding when iterations are needed.</p>
+        <p>Syntax:</p>
+        <pre>
+            for (var i = 0; i &lt; a.length; i++) {
+            }
+        </pre>
+        <p>Loop in action</p>
+        <pre style="padding-bottom:20px" id="loopOut"></pre>
 
-    <h2>This is Another Article</h2>
+        <button onclick="loops()">I am LOOP!</button>
 
-    <p class="quote">Chicken drumstick beef ribs tongue, buffalo pastrami pancetta cow pork loin swine ribeye ground
-        round sirloin venison turducken. Kielbasa prosciutto flank spare ribs turkey, ham fatback doner meatball corned
-        beef t-bone. Pork belly beef ribs short ribs pork kevin pastrami tenderloin hamburger cow spare ribs pork chop
-        biltong meatball shank pig. Brisket jerky sirloin, fatback alcatra pork belly boudin ham cupim rump burgdoggen
-        doner turkey. Shank capicola bacon meatloaf pancetta beef ribs swine buffalo alcatra sausage hamburger chuck.
-        Kevin beef ribs burgdoggen, doner fatback bacon pork chop.</p>
 
-    <p>Shank pig ball tip pork loin pork belly burgdoggen tenderloin ham hock. Pastrami strip steak alcatra kevin
-        biltong pig shankle shoulder chicken buffalo flank burgdoggen turducken frankfurter pork belly. Beef meatloaf
-        beef ribs bresaola, filet mignon jerky capicola spare ribs pork rump pork loin andouille. Pancetta rump tail
-        corned beef ball tip. Biltong rump cow frankfurter, burgdoggen kielbasa strip steak tail capicola pork
-        belly.</p>
+    </section>
 
-</section>
 
+    <section class="topic">
+        <div class="date">January 27 2018</div>
+
+        <h2>This is Another Article</h2>
+
+        <p class="quote">Chicken drumstick beef ribs tongue, buffalo pastrami pancetta cow pork loin swine ribeye ground
+            round sirloin venison turducken. Kielbasa prosciutto flank spare ribs turkey, ham fatback doner meatball
+            corned
+            beef t-bone. Pork belly beef ribs short ribs pork kevin pastrami tenderloin hamburger cow spare ribs pork
+            chop
+            biltong meatball shank pig. Brisket jerky sirloin, fatback alcatra pork belly boudin ham cupim rump
+            burgdoggen
+            doner turkey. Shank capicola bacon meatloaf pancetta beef ribs swine buffalo alcatra sausage hamburger
+            chuck.
+            Kevin beef ribs burgdoggen, doner fatback bacon pork chop.</p>
+
+        <p>Shank pig ball tip pork loin pork belly burgdoggen tenderloin ham hock. Pastrami strip steak alcatra kevin
+            biltong pig shankle shoulder chicken buffalo flank burgdoggen turducken frankfurter pork belly. Beef
+            meatloaf
+            beef ribs bresaola, filet mignon jerky capicola spare ribs pork rump pork loin andouille. Pancetta rump tail
+            corned beef ball tip. Biltong rump cow frankfurter, burgdoggen kielbasa strip steak tail capicola pork
+            belly.</p>
+
+    </section>
+</main>
+
+<script src="scripts/variables.js"></script>
+<script src="scripts/loops.js"></script>
 </body>
 </html>
