@@ -84,7 +84,7 @@
         <p><strong>A live example of working function along with a stored value:</strong></p>
         <input id="inputValue" type="text" placeholder="Change value">
 
-        <p id="liveOutput" style="margin: auto">See me change!</p>
+        <p class="output" id="liveOutput" style="margin: auto">See me change!</p>
         <hr>
     </section>
 
@@ -97,7 +97,7 @@
             for (var i = 0; i &lt; a.length; i++) {
             }
         </pre>
-        <p>Loop in action</p>
+        <p><strong>Loop in action:</strong></p>
         <pre style="padding-bottom:20px" id="loopOut"></pre>
 
         <button onclick="loops()">I am LOOP!</button>
@@ -117,37 +117,97 @@
         statements2
         }
         </pre>
-        <p>In action</p>
+        <p><strong>Conditionals in action:</strong></p>
+        <p>Now we will know...How many books did you read during the summer?</p>
+        <input type="text" id="one" size="5">
+        <button type="button" onclick="conditionals()">Click</button>
+        <div class="output" id="outputCond"></div>
+        <hr>
     </section>
 
+    <section>
+        <h3 class="quote">Parameters</h3>
+        <p>Function parameters are the names listed in the function definition.
 
-    <section class="topic">
-        <div class="date">January 27 2018</div>
+            Function arguments are the real values passed to (and received by) the function.
+        </p>
+        <p>Example:</p>
+        <pre>
+        functionName(parameter1, parameter2, parameter3) {
 
-        <h2>This is Another Article</h2>
+        }
+        </pre>
+        <p>We can pass the value from these inputs to get wind chill temperature in Fahrenheit:</p>
+        <p>Temperature:</p>
+        <input type="text" id="tempF">
+        <p>Wind Speed:</p>
+        <input type="text" id="speed">
+        <button type="button" onclick="parameters()">Wind Chill</button>
+        <div id="outputChill"></div>
+        <hr>
+    </section>
+    <section>
+        <h3 class="quote">Arrays</h3>
+        <p>
+            The JavaScript Array object is a global object that is used in the construction of arrays; which are
+            high-level, list-like objects.
+            Arrays exist to store multiple values in a single variable.
+        </p>
+        <pre>
+        var myArray= [“value1”, “value 2”, 4, 23, 12123, 0.2, true, undefined];
+            // use index to access array's value
+            myArray[4]; // which is 12123
+    </pre>
+        <p>Arrays have their own methods (already existing functions) which are listen in the DOM API. For example:</p>
+        <pre>
+        array.prototype.slice()
+        </pre>
 
-        <p class="quote">Chicken drumstick beef ribs tongue, buffalo pastrami pancetta cow pork loin swine ribeye ground
-            round sirloin venison turducken. Kielbasa prosciutto flank spare ribs turkey, ham fatback doner meatball
-            corned
-            beef t-bone. Pork belly beef ribs short ribs pork kevin pastrami tenderloin hamburger cow spare ribs pork
-            chop
-            biltong meatball shank pig. Brisket jerky sirloin, fatback alcatra pork belly boudin ham cupim rump
-            burgdoggen
-            doner turkey. Shank capicola bacon meatloaf pancetta beef ribs swine buffalo alcatra sausage hamburger
-            chuck.
-            Kevin beef ribs burgdoggen, doner fatback bacon pork chop.</p>
+        <p>
+            Note: node lists look like arrays but they are not. Node lists have their own methods that are not like
+            arrays’
+            methods.
+            Node lists can be converted to arrays to use arrays’ methods.
+        </p>
+        <p>We can manipulate Arrays data.<br> Let's assume we have an array:</p>
+        <pre>
+            var list = [8991,1,2,3,4,5,6,7,8,9];
+        </pre>
+        <p>And we want the sum of the first and the last values:</p>
 
-        <p>Shank pig ball tip pork loin pork belly burgdoggen tenderloin ham hock. Pastrami strip steak alcatra kevin
-            biltong pig shankle shoulder chicken buffalo flank burgdoggen turducken frankfurter pork belly. Beef
-            meatloaf
-            beef ribs bresaola, filet mignon jerky capicola spare ribs pork rump pork loin andouille. Pancetta rump tail
-            corned beef ball tip. Biltong rump cow frankfurter, burgdoggen kielbasa strip steak tail capicola pork
-            belly.</p>
+        <button type="button" onclick="arrays()">Get Epic Value</button>
+        <div class="output" id="outputArray"></div>
 
+        <hr>
+    </section>
+    <section>
+        <h3 class="quote">Associative Arrays</h3>
+        <p>It is almost the same as the normal arrays but are populated differently.<br> Also, values in associative
+            arrays
+            have a keywords with which they are associated.
+        </p>
+        <p>Instead of writing:</p>
+        <pre>
+            var cat = [“blue”,”chips”];
+        </pre>
+        <p>We can write:</p>
+        <pre>
+            var cat = new Array();
+            cat[“color”] = “blue”;
+            cat[”food”] = “chips”;
+        </pre>
+        <p>It can be accessed using associate words:</p>
+            <pre>
+                console.log(“my cat loves” + cat[food]); //my cat loves chips
+            </pre>
+        <hr>
     </section>
 </main>
 
 <script src="scripts/variables.js"></script>
 <script src="scripts/loops.js"></script>
+<script src="scripts/conditionals.js"></script>
+<script src="scripts/parameters.js"></script>
+<script src="scripts/arrays.js"></script>
 </body>
 </html>

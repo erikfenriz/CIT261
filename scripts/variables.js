@@ -4,10 +4,10 @@ var d = document,
 
 
 inputValue.onkeyup = function () {
-    if(liveOutput.textContent.length < 30) {
+    if(liveOutput.textContent.length < 10) {
         liveOutput.textContent = this.value;
-    }else{
-        this.value = 0;
+    }else if(liveOutput.textContent.length >= 10){
+        this.value = " ";
         liveOutput.textContent = " ";
     }
 };

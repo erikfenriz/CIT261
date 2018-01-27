@@ -81,13 +81,17 @@ pre {
 input {
     box-shadow: 3px 5px #888888;
 }
-
-#liveOutput {
+.output {
     color: violet;
     float: right;
 }
+#outputChill{
+    color: violet;
+    min-height: 2em;
+    margin-top: 5px;
+}
 #loopOut{
-    min-height: 12em;
+    min-height: 13em;
 }
 button{
     -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
