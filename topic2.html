@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>Object Creation Functions, Inheritance, Properties, Methods, Instantiation</title>
+</head>
+<body>
+<header><a href="index.html">Back</a></header>
+<main>
+    <section class="topic">
+
+        <div class="date">January 27 2018</div>
+
+        <h2>Topic#2</h2>
+
+        <h3 class="quote">Object Creation</h3>
+
+        <p>When a JavaScript variable is declared with the keyword "new", the variable is created as an object:</p>
+        <pre>
+            var x = new String();  // String object
+            var y = new Number();  // Number object
+            var z = new Boolean();// Boolean object
+        </pre>
+        <p>If I imagine my room as a JavaScript object, it would be:</p>
+        <pre>
+    var place = new Object();
+    place.status = "clean";
+    place.color = "beige";
+</pre>
+        <hr>
+    </section>
+    <section>
+        <h3 class="quote">Inheritance</h3>
+        <p>First of all, we can create ClassA easily. Because there are no explicit classes, we can define a set of
+            behavior (A class so…) by just creating a function. This “class” can be instantiated using the new
+            keyword:
+        </p>
+        <pre>var ClassA = function() {
+            this.name = "class A";
+            }
+            ClassA.prototype.print = function() {
+                console.log(this.name);
+            }
+            var a = new ClassA();
+            a.print();</pre>
+        <p>Now let’s add a tool to create “inheritance” between classes. This tool will just have to do one single
+            thing: clone the prototype:</p>
+        <pre>
+            var inheritsFrom = function (child, parent) {
+            child.prototype = Object.create(parent.prototype);
+            };
+        </pre>
+        <p>By cloning the prototype, we transfer all members and functions to the new class.
+
+            So if we want to add a second class that will be a child of the first one, we just have to use this
+            code:</p>
+        <pre>var ClassB = function() {
+            this.name = "class B";
+            this.surname = "I'm the child";
+            }
+            inheritsFrom(ClassB, ClassA);
+        </pre>
+        <p>Because ClassB inherited the print function from ClassA, the following code is working:</p>
+        <pre>
+            var b = new ClassB();
+            b.print();
+        </pre>
+        <p>And produces the following output:
+
+        </p>
+        <pre>class B</pre>
+        <p>We can even override the print function for ClassB:</p>
+        <pre>
+            ClassB.prototype.print = function() {
+            ClassA.prototype.print.call(this);
+            console.log(this.surname);
+            }
+        </pre>
+        <p>In this case, the produced output will look like this:</p>
+        <pre>class B
+            I’m the child</pre>
+        <p>The trick here is to the call ClassA.prototype to get the base print function. Then thanks to call function
+            we can call the base function on the current object (this).
+
+            Creating ClassC is now obvious:</p>
+        <pre>var ClassC = function () {
+    this.name = "class C";
+    this.surname = "I'm the grandchild";
+}
+
+inheritsFrom(ClassC, ClassB);
+
+ClassC.prototype.foo = function() {
+    // Do some funky stuff here...
+}
+
+ClassC.prototype.print = function () {
+    ClassB.prototype.print.call(this);
+    console.log("Sounds like this is working!");
+}
+
+var c = new ClassC();
+c.print();</pre>
+        <p>The output:</p>
+        <pre>class C
+I’m the grandchild
+Sounds like this is working!</pre>
+        <hr>
+    </section>
+    <section>
+        <h3 class="quote">Properties</h3>
+        <p>Properties are the values associated with a JavaScript object.
+            A JavaScript object is a collection of unordered properties.
+            Properties can usually be changed, added, and deleted, but some are read only.
+        </p>
+        <p>Property accessors provide access to an object's properties by using the dot notation or the bracket
+            notation.
+        </p>
+        <pre>
+            object.property;
+            object['property'];
+        </pre>
+        <hr>
+    </section>
+    <section>
+        <h3 class="quote">Methods</h3>
+        <p>
+            JavaScript methods are the actions that can be performed on objects. A JavaScript method is a property
+            containing a function definition.
+        </p>
+        <pre>
+        var obj = {
+        foo() {
+          /* code */
+        },
+        bar() {
+          /* code */
+        }
+        };
+        </pre>
+        <hr>
+    </section>
+    <section>
+        <h3 class="quote">Instantiation</h3>
+        <p>With functional instantiation, we first create a function. Inside the function we create an empty object and
+            add properties and methods to it. We then return this object.
+            Every time the function is called we will have access to the methods that were created. Here is an example
+            of functional instantiation:</p>
+        <img src="img/instantiation1.png" alt="code" style="width: 100%">
+
+        <p><strong>Functional Shared Instantiation</strong></p>
+        <p>
+            One of the downsides of functional instantiation is that you duplicate methods in memory every time you
+            create a new object. Functional shared instantiation attempts to overcome that limitation by making the
+            methods shared among all objects.
+            Just like functional instantiation, we start with a function with an empty object inside and define
+            properties within the function. Methods are defined in another object. We then extend our object with these
+            methods. In the end, we return the object. Every object created by functional shared instantiation will have
+            a pointer to the same methods without duplication. Here is an example of functional shared instantiation.
+        </p>
+        <img src="img/instantiation2.png" alt="code" style="width: 100%">
+        <p><span style="color: #bc3315">Pros:</span><br>
+            Removes the duplication of methods that was found in functional instantiation which improves memory
+            management.
+            <br>
+            <span style="color: #295dbc">Cons:</span><br>
+            The pointers to the shared methods are created when the object is instantiated. If you modify the methods
+            and then create new objects, they original object and the new object will refer to different methods.</p>
+        <p><strong>Prototypal Instantiation</strong></p>
+        <p>Prototypal instantiation utilizes the prototype chain to create objects. Methods are attached to the object’s
+            prototype using the Object.create method.
+            To start you will create all the methods on a separate object. Then you create a function. Inside the
+            function you use the Object.create method to attach the methods. You will also define any properties inside
+            the function. Then you return the object. Here is an example of prototypal instantiation.
+        </p>
+        <hr>
+    </section>
+    <section>
+
+        <p>It is a <strong>good practice</strong> to use objects oriented principles when dealing with multiple objects
+            of a same
+            type.</p>
+        <p><strong>Code in action:</strong></p>
+        <canvas id="blocks" width="300" height="100" style="background-color: #408bb5"></canvas>
+        <button onclick="createColor()" style="display: block; margin: 0 auto;">Party</button>
+        <hr>
+    </section>
+</main>
+<script src="scripts/objects.js"></script>
+</body>
+</html>
