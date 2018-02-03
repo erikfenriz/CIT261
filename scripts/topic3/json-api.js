@@ -1,6 +1,7 @@
 
 (function () {
-    fetch('http://content.guardianapis.com/search?api-key=test')
+    fetch('https://content.guardianapis.com/search?api-key=9882b19e-81bb-4245-a67c-31fec90baee4')
+
         .then(function (response) {
             return response.json();
         })
