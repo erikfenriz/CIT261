@@ -93,6 +93,19 @@ input {
 #loopOut{
     min-height: 13em;
 }
+#colorOutput{
+    min-height: 2em;
+    text-align: center;
+}
+#colorForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnColor{
+    padding: 20px;
+    margin: 10px;
+}
 button{
     -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
     -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+.center, ul li{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 1%;
+}
+h1{
+    font-family: 'Vollkorn SC', serif;
+    font-weight: 300;
+    font-size: 5em;
+}
