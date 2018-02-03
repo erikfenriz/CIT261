@@ -154,26 +154,21 @@ let d = document;
 let parsed = JSON.parse(color);
 
 function moccasin() {
-    let parsed = JSON.parse(color);
     d.getElementById('colorOutput').innerHTML = "RGBa: " + "<span style='color:#ffe4b5'>" + parsed.moccasin + "</span>";
 }
 
 function cyanColor() {
-    let parsed = JSON.parse(color);
     d.getElementById('colorOutput').innerHTML = "RGBa:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<span style='color:#00ffff'>" + parsed.cyan + "</span>";
 }
 
 function violetColor() {
-    let parsed = JSON.parse(color);
     d.getElementById('colorOutput').innerHTML = "RGBa: " + "<span style='color:#ee82ee'>" + parsed.violet + "</span>";
 }
 
 function silverColor() {
-    let parsed = JSON.parse(color);
     d.getElementById('colorOutput').innerHTML = "RGBa: " + "<span style='color:#c0c0c0'>" + parsed.silver + "</span>";
 }
 
 function oliveColor() {
-    let parsed = JSON.parse(color);
     d.getElementById('colorOutput').innerHTML = "RGBa:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<span style='color:#808000'>" + parsed.olive + "</span>";
 }
