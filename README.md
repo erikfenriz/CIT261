@@ -1,5 +1,5 @@
 # CIT261
-Collection of 13 topics to study at University:<br>
+Collection of 13 topics that are studied at University:<br>
 ◘ JavaScript - Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays<br>
 ◘ JavaScrip Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation<br>
 ◘ JSON Parse, Stringify<br>
