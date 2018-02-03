@@ -4,9 +4,19 @@
     width: 70%;
     margin: auto;
     padding: 1%;
+    animation: fadeIn 2s;
 }
 h1{
     font-family: 'Vollkorn SC', serif;
     font-weight: 300;
     font-size: 5em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
