@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/events.css">
+    <title>Piano Player</title>
+</head>
+<body>
+
+<div class="keys">
+    <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">C</span>
+    </div>
+    <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">D</span>
+    </div>
+    <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">E</span>
+    </div>
+    <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">F</span>
+    </div>
+    <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="sound">G</span>
+    </div>
+    <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="sound">A</span>
+    </div>
+    <div data-key="74" class="key">
+        <kbd>J</kbd>
+        <span class="sound">B</span>
+    </div>
+    <div data-key="75" class="key">
+        <kbd>K</kbd>
+        <span class="sound">C</span>
+    </div>
+    <div data-key="76" class="key">
+        <kbd>L</kbd>
+        <span class="sound">D</span>
+    </div>
+</div>
+
+<audio data-key="65" src="sounds/wav/c.wav"></audio>
+<audio data-key="83" src="sounds/wav/d.wav"></audio>
+<audio data-key="68" src="sounds/wav/e.wav"></audio>
+<audio data-key="70" src="sounds/wav/f.wav"></audio>
+<audio data-key="71" src="sounds/wav/g.wav"></audio>
+<audio data-key="72" src="sounds/wav/a.wav"></audio>
+<audio data-key="74" src="sounds/wav/b.wav"></audio>
+<audio data-key="75" src="sounds/wav/c1.wav"></audio>
+<audio data-key="76" src="sounds/wav/d2.wav"></audio>
+
+<script src="scripts/topic9/onKeyPress.js"></script>
+
+
+
+</body>
+</html>
