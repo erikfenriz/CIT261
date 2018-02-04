@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835f5d90-d3b5-4df7-8289-34ebd8cf2b2f" name="Default" comment="Merge remote-tracking branch 'refs/remotes/origin/master'&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pianoPlay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/topic4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/topic9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/boom.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/clap.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/hihat.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/kick.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/openhat.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/ride.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/snare.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/tink.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/tom.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/wav/a.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/wav/b.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/wav/c.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/wav/c1.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/wav/d.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/wav/d2.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/wav/e.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/wav/f.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/wav/g.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/events.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/topic9/onKeyPress.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/events.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topic9.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/topic3.html" afterPath="$PROJECT_DIR$/topic3.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="80" column="7" lean-forward="false" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+            <state relative-caret-position="289">
+              <caret line="71" column="41" lean-forward="false" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -69,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topic3.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="topic3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topic3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="705">
               <caret line="47" column="62" lean-forward="false" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#form#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -235,12 +209,12 @@
         <option value="$PROJECT_DIR$/styles/json.css" />
         <option value="$PROJECT_DIR$/scripts/topic3/json-parse.js" />
         <option value="$PROJECT_DIR$/topic5.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/topic9/checks.js" />
         <option value="$PROJECT_DIR$/styles/events.css" />
         <option value="$PROJECT_DIR$/events.html" />
         <option value="$PROJECT_DIR$/topic9.html" />
         <option value="$PROJECT_DIR$/topic3.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -388,12 +362,12 @@
       <workItem from="1517067770437" duration="16650000" />
       <workItem from="1517096985107" duration="4941000" />
       <workItem from="1517660833721" duration="13170000" />
-      <workItem from="1517775581625" duration="2734000" />
+      <workItem from="1517775581625" duration="3364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60331000" />
+    <option name="totallyTimeSpent" value="60961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="42" y="23" width="1233" height="777" extended-state="0" />
@@ -752,14 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="7" lean-forward="false" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/topic2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -832,18 +798,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/topic9/onKeyPress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="77" lean-forward="true" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/events.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/topic9/onKeyPress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="77" lean-forward="true" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -873,7 +839,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/topic3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="705">
           <caret line="47" column="62" lean-forward="false" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
           <folding>
             <element signature="n#style#0;n#button#0;n#form#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -883,6 +849,14 @@
             <element signature="n#style#0;n#button#4;n#form#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#strong#0;n#p#7;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="71" column="41" lean-forward="false" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
