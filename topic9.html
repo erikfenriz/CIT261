@@ -145,10 +145,26 @@ monitorEvents(document.body, "click");
 function itDoesThings(events){
         }
     </pre>
+    <h3 class="quote">onload</h3>
+    <p>The GlobalEventHandlers mixin is an event handler for the load event of a Window, XMLHttpRequest which fires when
+        the resource has loaded.</p>
+    <pre>
+        window.onload = funcRef;
+    </pre>
+    <p>funcRef is the handler function to be called when the window’s load event fires.
+    </p>
+    <p>The load event fires at the end of the document loading process. At this point, all of the objects in the
+        document are in the DOM, and all the images, scripts, links and sub-frames have finished loading.</p>
+    <h3 class="quote">ontouchstart</h3>
+    <p><span style="color: #bc3315">This is an experimental technology!</span></p>
+    <pre>var startHandler = someElement.ontouchstart;</pre>
+    <p><strong>startHandler</strong><br>
+        The touchstart event handler for element someElement.</p>
     <hr>
     <h3 class="quote">Functional page with animation and transition</h3>
     <h4 style="text-align: center"><a href="events.html"><span
-            style="font-family: 'Vollkorn SC', serif; font-size: larger"><i class="em em-musical_score"></i>Piano Player<i class="em em-musical_keyboard"></i></span></a></h4>
+            style="font-family: 'Vollkorn SC', serif; font-size: larger"><i class="em em-musical_score"></i>Piano Player<i
+            class="em em-musical_keyboard"></i></span></a></h4>
 </main>
 </body>
 </html>
