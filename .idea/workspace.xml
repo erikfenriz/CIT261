@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835f5d90-d3b5-4df7-8289-34ebd8cf2b2f" name="Default" comment="Merge remote-tracking branch 'refs/remotes/origin/master'&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/boom.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/clap.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/hihat.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/kick.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/openhat.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/ride.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/snare.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/tink.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/tom.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/wav/a.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/wav/b.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/wav/c.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/wav/c1.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/wav/d.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/wav/d2.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/wav/e.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/wav/f.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sounds/wav/g.wav" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events.html" afterPath="$PROJECT_DIR$/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/topic9/onKeyPress.js" afterPath="$PROJECT_DIR$/scripts/topic9/onKeyPress.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -79,17 +60,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="events.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/events.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+            <state relative-caret-position="240">
+              <caret line="22" column="64" lean-forward="true" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="onKeyPress.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="onKeyPress.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/topic9/onKeyPress.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -208,8 +189,8 @@
         <option value="$PROJECT_DIR$/topic3.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/topic9.html" />
-        <option value="$PROJECT_DIR$/events.html" />
         <option value="$PROJECT_DIR$/scripts/topic9/onKeyPress.js" />
+        <option value="$PROJECT_DIR$/events.html" />
       </list>
     </option>
   </component>
@@ -357,12 +338,12 @@
       <workItem from="1517067770437" duration="16650000" />
       <workItem from="1517096985107" duration="4941000" />
       <workItem from="1517660833721" duration="13170000" />
-      <workItem from="1517775581625" duration="9997000" />
+      <workItem from="1517775581625" duration="10338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67594000" />
+    <option name="totallyTimeSpent" value="67935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="23" width="1237" height="777" extended-state="6" />
@@ -842,18 +823,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/topic9/onKeyPress.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="64" lean-forward="true" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
           <folding />
         </state>
       </provider>
