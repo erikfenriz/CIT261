@@ -103,19 +103,29 @@ btn.addEventListener('click', bgChange);
         document.body.style.backgroundColor = rndCol;
         });
     </pre>
+    <p>This mechanism has some advantages over the older mechanisms.</p>
+    <p>A counterpart function is removeEventListener(), which removes a previously added listener. For example, this would
+        remove the listener set in the first code block in this section:</p>
+    <pre>
+        btn.removeEventListener('click', bgChange);
+    </pre>
     <h3 class="quote">Using monitorEvents()</h3>
     <p>There are times when we want to know what is happening on the page and what triggers the content. For example, I
-        want to monitor the first empty tile on a Google Chrome's starting page</p>
-    <p><span style="color: green">Note: we can't use <span style="color: #bc3315">monitorEvents()</span> in the .js, but only in the console dev tools</span>
+        want to monitor the first empty tile on a Google Chrome's starting page...</p>
+    <p><span style="color: green">Note: we can't use <span style="color: #bc3315">monitorEvents()</span> in the .js, but only in
+        the console dev tools</span>
     </p>
     <pre>
         let x = document.getElementsByClassName("mv-empty-tile");
 
-        monitorEvents(x);
-
         let z = x[0];
 
         monitorEvents(z);
+    </pre>
+    <p>Or div with id #mv-tiles</p>
+    <pre>
+        var x = document.getElementById('mv-tiles');
+        monitorEvents(x);
     </pre>
     <p>The output I get in the console:</p>
     <pre>
