@@ -20,6 +20,70 @@
         <h2>Topic#13</h2>
         <h3 class="quote">Designing, Defining, and Triggering CSS3 Animations</h3>
         <p>Animation in action: <a href="pianists.html">Meet Great Pianists ...</a></p>
+        <hr>
+        <h3>Using CSS animations</h3>
+        <p>CSS animations make it possible to animate transitions from one CSS style configuration to another.
+            Animations consist of two components, a style describing the CSS animation and a set of keyframes that
+            indicate the start and end states of the animation’s style, as well as possible intermediate waypoints.</p>
+        <ol>
+            <li>They’re easy to use for simple animations; you can create them without even having to know JavaScript.
+            </li>
+            <li>
+                The animations run well, even under moderate system load. Simple animations can often perform poorly in
+                JavaScript (unless they’re well made). The rendering engine can use frame-skipping and other techniques
+                to keep the performance as smooth as possible.
+            </li>
+            <li>Letting the browser control the animation sequence lets the browser optimize performance and efficiency
+                by, for example, reducing the update frequency of animations running in tabs that aren't currently
+                visible.
+            </li>
+        </ol>
+        <p>To create a CSS animation sequence, you style the element you want to animate with the animation property or
+            its sub-properties. This lets you configure the timing, duration, and other details of how the animation
+            sequence should progress. This does not configure the actual appearance of the animation, which is done
+            using the <span style="color: #ffc600">@keyframes</span> at-rule as described in Defining the animation
+            sequence using keyframes below.</p>
+        <br>
+        <h4>The sub-properties of the animation property are:</h4>
+        <ul>
+            <li>animation-delay <br>
+                Configures the delay between the time the element is loaded and the beginning of the animation sequence.
+            </li>
+            <br>
+            <li>animation-direction <br>
+                Configures whether or not the animation should alternate direction on each run through the sequence or
+                reset to the start point and repeat itself.
+            </li>
+            <br>
+            <li>animation-duration <br>
+                Configures the length of time that an animation should take to complete one cycle.
+            </li>
+            <br>
+            <li>animation-iteration-count <br>
+                Configures the number of times the animation should repeat; you can specify infinite to repeat the
+                animation indefinitely.
+            </li>
+            <br>
+            <li>animation-name <br>
+                Specifies the name of the @keyframes at-rule describing the animation’s keyframes.
+            </li>
+            <br>
+            <li>animation-play-state <br>
+                Lets you pause and resume the animation sequence.
+            </li>
+            <br>
+            <li>animation-timing-function <br>
+                Configures the timing of the animation; that is, how the animation transitions through keyframes, by
+                establishing acceleration curves.
+            </li>
+            <br>
+            <li>animation-fill-mode <br>
+                Configures what values are applied by the animation before and after it is executing.
+            </li>
+        </ul>
+        <p>Once you’ve configured the animation’s timing, you need to define the appearance of the animation. This is
+            done by establishing two or more keyframes using the @keyframes at-rule. Each keyframe describes how the
+            animated element should render at a given time during the animation sequence.</p>
     </section>
 </main>
 </body>
