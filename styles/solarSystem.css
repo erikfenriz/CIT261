@@ -1,11 +1,82 @@
-*{
+:root {
+    --timing: 1s;
+    --speedMercury: 2s;
+    --speedVenus: 5s;
+    --speedEarth: 9s;
+    --speedMoon: 3s;
+    --speedMars: 15s;
+    --speedAsteroids: 199s;
+    --speedJupiter: 39s;
+    --speedIo: 3s;
+    --speedEuropa: 7s;
+    --speedGanymede: 11s;
+    --speedCallisto: 15s;
+    --speedSaturn: 44s;
+    --speedUranus: 49s;
+    --speedNeptune: 54s;
+    --speedPluto: 49s;
+    --speedSharon: 3s;
+}
+
+* {
     transition: all 0.5s ease-out;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
 }
 
 body {
     background: #000000;
     background: url("../img/stars.gif") repeat;
     width: 100%;
+}
+
+form {
+    position: fixed;
+}
+
+label {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 100px;
+}
+
+input {
+    width: 300px;
+}
+
+input[type=range] {
+    height: 38px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background: transparent;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: #333466;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000;
+    border: 1px solid #000000;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
 }
 
 #system {
@@ -42,7 +113,16 @@ body {
     height: 300px;
     border: 1px dashed white;
     border-radius: 100%;
-    animation: spin 3s linear infinite;
+    animation: spin calc(var(--timing) + (var(--speedMercury))) linear infinite;
+}
+
+#venus {
+    position: absolute;
+    margin-left: 70px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    transform: rotate(-95deg);
 }
 
 #venus-orbit {
@@ -53,16 +133,7 @@ body {
     height: 350px;
     border: 1px dashed white;
     border-radius: 100%;
-    animation: spin 6s linear infinite;
-}
-
-#venus {
-    position: absolute;
-    margin-left: 70px;
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    transform: rotate(-95deg);
+    animation: spin calc(var(--timing) + (var(--speedVenus))) linear infinite;
 }
 
 #earth {
@@ -82,7 +153,7 @@ body {
     height: 440px;
     border: 1px dashed white;
     border-radius: 100%;
-    animation: spin 10s linear infinite;
+    animation: spin calc(var(--timing) + (var(--speedEarth))) linear infinite;
 }
 
 #moon {
@@ -100,7 +171,7 @@ body {
     border: 1px dotted white;
     margin-left: 75px;
     margin-top: -25px;
-    animation: spinReverse 4s linear infinite;
+    animation: spinReverse calc(var(--timing) + (var(--speedMoon))) linear infinite;
 }
 
 #mars {
@@ -120,7 +191,7 @@ body {
     height: 600px;
     border: 1px dashed white;
     border-radius: 100%;
-    animation: spin 16s linear infinite;
+    animation: spin calc(var(--timing) + (var(--speedMars))) linear infinite;
 }
 
 #asteroid-belt {
@@ -131,7 +202,7 @@ body {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    animation: spin 200s linear infinite;
+    animation: spin calc(var(--timing) + (var(--speedAsteroids))) linear infinite;
 }
 
 #jupiter {
@@ -153,7 +224,7 @@ body {
     height: 1120px;
     border: 1px solid white;
     border-radius: 100%;
-    animation: spin 40s linear infinite;
+    animation: spin calc(var(--timing) + (var(--speedJupiter))) linear infinite;
 }
 
 #io {
@@ -172,7 +243,7 @@ body {
     margin-left: 828px;
     margin-top: 75px;
     left: 100px;
-    animation: spinReverse 4s linear infinite;
+    animation: spinReverse calc(var(--timing) + (var(--speedIo))) linear infinite;
 }
 
 #europa {
@@ -191,7 +262,7 @@ body {
     margin-left: 818px;
     margin-top: -92px;
     left: 100px;
-    animation: spinReverse 8s linear infinite;
+    animation: spinReverse calc(var(--timing) + (var(--speedEuropa))) linear infinite;
 }
 
 #ganymede {
@@ -210,7 +281,7 @@ body {
     margin-left: 810px;
     margin-top: -110px;
     left: 100px;
-    animation: spinReverse 12s linear infinite;
+    animation: spinReverse calc(var(--timing) + (var(--speedGanymede))) linear infinite;
 }
 
 #callisto {
@@ -219,6 +290,7 @@ body {
     border-radius: 100%;
     position: absolute;
     margin-left: 88px;
+    color: #74A9D8;
 }
 
 #callisto-orbit {
@@ -229,17 +301,17 @@ body {
     margin-left: 805px;
     margin-top: -126px;
     left: 100px;
-    animation: spinReverse 16s linear infinite;
+    animation: spinReverse calc(var(--timing) + (var(--speedCallisto))) linear infinite;
 }
 
 #saturn {
-     position: absolute;
-     margin-top: 30px;
-     margin-left: 900px;
-     height: 100px;
-     width: 100px;
-     transform: rotate(120deg);
- }
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 900px;
+    height: 100px;
+    width: 100px;
+    transform: rotate(120deg);
+}
 
 #saturn-orbit {
     position: absolute;
@@ -250,7 +322,7 @@ body {
     height: 1290px;
     border: 1px solid #932d2b;
     border-radius: 100%;
-    animation: spin 45s linear infinite;
+    animation: spin calc(var(--timing) + (var(--speedSaturn))) linear infinite;
 }
 
 #uranus {
@@ -271,7 +343,7 @@ body {
     height: 1390px;
     border: 1px solid #8d4c1b;
     border-radius: 100%;
-    animation: spin 50s linear infinite;
+    animation: spin calc(var(--timing) + (var(--speedUranus))) linear infinite;
 }
 
 #neptune {
@@ -292,7 +364,7 @@ body {
     height: 1550px;
     border: 1px solid #588420;
     border-radius: 100%;
-    animation: spin 55s linear infinite;
+    animation: spin calc(var(--timing) + (var(--speedNeptune))) linear infinite;
 }
 
 #pluto {
@@ -313,7 +385,7 @@ body {
     height: 1640px;
     border: 1px solid #8b4890;
     border-radius: 100%;
-    animation: spin 50s linear infinite;
+    animation: spin calc(var(--timing) + (var(--speedPluto))) linear infinite;
 }
 
 #charon {
@@ -331,7 +403,7 @@ body {
     border: 1px dotted white;
     margin-left: 1033px;
     margin-top: 8px;
-    animation: spinReverse 4s linear infinite;
+    animation: spinReverse calc(var(--timing) + (var(--speedSharon))) linear infinite;
 }
 
 @keyframes spin {
@@ -345,4 +417,5 @@ body {
         transform: rotate(-360deg);
     }
 }
+
 
