@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835f5d90-d3b5-4df7-8289-34ebd8cf2b2f" name="Default" comment="Merge remote-tracking branch 'refs/remotes/origin/master'&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/topic12/clocks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/clocks.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/topic12.html" afterPath="$PROJECT_DIR$/topic12.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -76,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clocks.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clocks.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/clocks.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -116,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topic12.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="topic12.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/topic12.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="273">
+              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -219,12 +218,12 @@
         <option value="$PROJECT_DIR$/topic13.html" />
         <option value="$PROJECT_DIR$/solarSystem.html" />
         <option value="$PROJECT_DIR$/styles/solarSystem.css" />
-        <option value="$PROJECT_DIR$/topic12.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/topic12/clocks.js" />
         <option value="$PROJECT_DIR$/e-tennis.html" />
         <option value="$PROJECT_DIR$/clocks.html" />
         <option value="$PROJECT_DIR$/styles/clocks.css" />
+        <option value="$PROJECT_DIR$/topic12.html" />
       </list>
     </option>
   </component>
@@ -374,12 +373,12 @@
       <workItem from="1519248563939" duration="1260000" />
       <workItem from="1519333296668" duration="322000" />
       <workItem from="1519734488075" duration="20575000" />
-      <workItem from="1520251470216" duration="515000" />
+      <workItem from="1520251470216" duration="667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141890000" />
+    <option name="totallyTimeSpent" value="142042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="23" width="1239" height="777" extended-state="6" />
@@ -674,14 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic12.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1995">
@@ -742,6 +733,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic12.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding />
         </state>
       </provider>
